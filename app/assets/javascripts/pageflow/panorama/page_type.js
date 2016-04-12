@@ -14,7 +14,7 @@ pageflow.pageType.register('panorama', _.extend({
     });
 
     this.removeUnplayedClass = function() {
-      pageElement.find('.controls').removeClass('unplayed');
+      pageElement.find('.content_and_background').removeClass('unplayed');
     };
 
     this.enableScrollIndicator = function() {
@@ -32,7 +32,7 @@ pageflow.pageType.register('panorama', _.extend({
 
   activating: function(pageElement, configuration) {
     this._ensureIframe(pageElement, configuration);
-    pageElement.find('.controls').addClass('unplayed');
+    pageElement.find('.content_and_background').addClass('unplayed');
   },
 
   activated: function(pageElement, configuration) {
