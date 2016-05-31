@@ -21,5 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec-rails", "~> 2.0"
   spec.add_development_dependency 'factory_girl_rails'
-  spec.add_development_dependency "mysql2"
+  spec.add_development_dependency 'mysql2', '~> 0.3.16'
+  spec.add_development_dependency 'pageflow-support'
 end

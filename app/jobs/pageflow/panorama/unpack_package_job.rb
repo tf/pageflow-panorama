@@ -1,3 +1,5 @@
+require 'pageflow/panorama/validation'
+
 module Pageflow
   module Panorama
     class UnpackPackageJob
@@ -15,8 +17,6 @@ module Pageflow
 
         :ok
       end
-
-      private
 
       def self.parse(package)
         result = Validation.parse(package.archive)
